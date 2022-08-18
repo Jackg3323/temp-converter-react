@@ -18,6 +18,8 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-scripts: ^5.0.1
+  react-test-renderer: ^18.2.0
+  react-testing-library: ^8.0.1
   tailwindcss: ^3.1.8
 
 dependencies:
@@ -27,6 +29,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
+  react-test-renderer: 18.2.0_react@18.2.0
 
 devDependencies:
   autoprefixer: 10.4.8_postcss@8.4.16
@@ -40,6 +43,7 @@ devDependencies:
   postcss: 8.4.16
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
+  react-testing-library: 8.0.1
   tailwindcss: 3.1.8
 
 packages:
@@ -8101,6 +8105,32 @@ packages:
       - webpack-hot-middleware
       - webpack-plugin-serve
     dev: false
+
+  /react-shallow-renderer/16.15.0_react@18.2.0:
+    resolution: {integrity: sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      object-assign: 4.1.1
+      react: 18.2.0
+      react-is: 18.2.0
+    dev: false
+
+  /react-test-renderer/18.2.0_react@18.2.0:
+    resolution: {integrity: sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-is: 18.2.0
+      react-shallow-renderer: 16.15.0_react@18.2.0
+      scheduler: 0.23.0
+    dev: false
+
+  /react-testing-library/8.0.1:
+    resolution: {integrity: sha512-Gq4JC9r3prA4hYwo7afcbHHMFckO29+5Nrh2KblAEPuK/DWaU0bJE1vtpAgLhzhY9bBirmcgjjIHljHEwGAXKw==}
+    deprecated: '🚨  react-testing-library has moved to @testing-library/react. Please uninstall react-testing-library and install @testing-library/react instead, or use an older version of react-testing-library. Learn more about this change here: https://github.com/testing-library/dom-testing-library/issues/260 Thanks! :)'
+    dev: true
 
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
